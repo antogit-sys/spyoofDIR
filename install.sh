@@ -1,13 +1,13 @@
 
 #!/bin/bash
 
-sudo apt install figlet macchanger #debian based
+sudo apt install macchanger #debian based
 clear
-sudo pacman -S figlet macchanger #arch based
+sudo pacman -S macchanger #arch based
 clear
-sudo yum install figlet macchanger #centos based
+sudo yum install macchanger #centos based
 clear
-dnf install figlet macchanger  #fedora based
+dnf install macchanger  #fedora based
 clear
 chmod a+x spyoof.py
 sudo cp spyoof.py /bin/spyoof

@@ -6,13 +6,13 @@ echo "+-------------+"
 echo "rimuovere anche dipendenze(figlet/macchanger)?: "
 read dip
 if [ $dip == "S" ] || [ $dip == "s" ] || [ $dip == "Y" ] || [ $dip == "y" ]; then
-	sudo apt purge figlet macchanger #debian based
+	sudo apt purge macchanger #debian based
 	clear
-	sudo pacman -R figlet macchanger #arch based
+	sudo pacman -R macchanger #arch based
 	clear
-	sudo yum remove figlet macchanger #centos based
+	sudo yum remove macchanger #centos based
 	clear
-	dnf remove figlet macchanger  #fedora based
+	dnf remove macchanger  #fedora based
 	clear
 fi
 
