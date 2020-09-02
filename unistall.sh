@@ -17,7 +17,7 @@ if [ $dip == "S" ] || [ $dip == "s" ] || [ $dip == "Y" ] || [ $dip == "y" ]; the
 fi
 
 sudo rm -rf ../spyoofDIR
-#sudo rm /bin/spyoof
+sudo rm /bin/spyoof
 echo "+-------------+"
 echo "|END UNINSTALL|"
 echo "+-------------+"
