@@ -20,18 +20,18 @@ def intro():
 	print("\nERROR:")
 	print("passare massimo 2 parametri")
 	print("\nUSE: ")
-	print("./spyoof.py [interface] [Mac address]")
-	print("or")
-	print("./spyoof.py [interface] rand")
+	print("./spyoof.py [interface] [rand/Mac address]")
 	print("\nEXAMPLE:")
-	print("./spyoof.py wlan0 00:11:22:33:44:55   \tmac spoofing manuale")
-	print("./spoof.py wlan0 rand		     \tgenero mac spoofing randomico")
+	print("./spyoof.py wlan0 00:11:22:33:44:55   \tcambio mac address in modo manuale")
+	print("./spoof.py wlan0 rand		     \tcambio mac address in modo randomico\n")
 
 def macspoofing(interface,mac):
 	os.system("sudo ifconfig "+str(interface)+" down")
 	if mac=="rand":
+		print("\n")
 		os.system("sudo macchanger -r "+interface)
 		os.system("sudo ifconfig "+interface+" up")
+		print("\n")
 		sys.exit()
 	os.system("sudo ifconfig "+str(interface)+" hw ether "+mac)
 	os.system("sudo ifconfig "+str(interface)+" up")
