@@ -3,7 +3,7 @@ clear
 echo "+-------------+"
 echo "| UNINSTALL   |"
 echo "+-------------+"
-echo "rimuovere anche dipendenze(figlet/macchanger)?: "
+echo "rimuovere anche macchanger?: "
 read dip
 if [ $dip == "S" ] || [ $dip == "s" ] || [ $dip == "Y" ] || [ $dip == "y" ]; then
 	sudo apt purge macchanger #debian based
@@ -18,6 +18,7 @@ fi
 
 sudo rm -rf ../spyoofDIR
 sudo rm /bin/spyoof
+clear
 echo "+-------------+"
 echo "|END UNINSTALL|"
 echo "+-------------+"
