@@ -23,7 +23,7 @@ def intro():
 	print("./spyoof.py [interface] [rand/Mac address]")
 	print("\nEXAMPLE:")
 	print("./spyoof.py wlan0 00:11:22:33:44:55   \tcambio mac address in modo manuale")
-	print("./spoof.py wlan0 rand		     \tcambio mac address in modo randomico\n")
+	print("./spyoof.py wlan0 rand		     \tcambio mac address in modo randomico\n")
 
 def macspoofing(interface,mac):
 	os.system("sudo ifconfig "+str(interface)+" down")
