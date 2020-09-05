@@ -36,7 +36,7 @@ spyoof [interface] [rand/mac-address]
 
 ```bash
 ./spyoof wlan0 rand #mac address randomico 
-./spyoof wlan0 00:11:22:33:44:55 #cambio mac address in modo casuale
+./spyoof wlan0 00:11:22:33:44:55 #cambio mac address in modo manuale
 ```
 
 **PHOTO**
